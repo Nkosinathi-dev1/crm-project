@@ -3,4 +3,21 @@
 GET {{Leads.API_HostAddress}}/weatherforecast/
 Accept: application/json
 
+
 ###
+GET {{Leads.API_HostAddress}}/api/leads
+Accept: application/json
+
+###
+GET {{Leads.API_HostAddress}}/api/leads/d076bdcb-b0b6-4063-99eb-a00f40689ddb
+Accept: application/json
+
+###
+POST {{Leads.API_HostAddress}}/api/leads
+Content-Type: application/json
+{
+  "firstName": "John",
+  "lastName": "Doe",
+  "email": "john.doe@example.com",
+  "phone": "+27831234567"
+}
